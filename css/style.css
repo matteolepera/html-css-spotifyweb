@@ -11,6 +11,23 @@ img {
   max-width: 100%;
 }
 
+/* UTILITY */
+.ht-20 {
+  height: 20px;
+}
+
+.ht-25 {
+  height: 25px;
+}
+
+.ht-30 {
+  height: 30px;
+}
+
+.mb-10{
+  margin-bottom: 10px
+}
+
 
 /* WRAPPER */
 .wrapper {
@@ -33,24 +50,43 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding: 6px;
 }
 
 .sidebar ul {
   list-style: none;
 }
 
+.name-menu-sidebar,
+.name-playlist,
+.new-playlist,
+.title-playlist,
+.btn-app,
+.account-name,
+.divider {
+  display: none;
+}
+
+.nav-sidebar {
+  text-align: center;
+}
+
+.account-sidebar {
+  text-align: center;
+}
 
 .account-bar {
-  display: flex;
-  align-items: center;
+  text-align: center;
 }
 
 
 .profile-picture {
   background-color: grey;
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
   border-radius: 50%;
+  display: inline-block;
+  background-image: url(../img/profile.svg);
   
 }
 
