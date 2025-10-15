@@ -11,7 +11,17 @@ img {
   max-width: 100%;
 }
 
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  ;
+}
+
 /* UTILITY */
+
 .ht-20 {
   height: 20px;
 }
@@ -24,7 +34,11 @@ img {
   height: 30px;
 }
 
-.mb-10{
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mb-10 {
   margin-bottom: 10px
 }
 
@@ -35,15 +49,9 @@ img {
   height: 100vh;
 }
 
-/* HEADER */
-header {
-  height: 80px;
-  background-color: #090B12;
-}
-
 /* SIDEBAR */
 .sidebar {
-  width: 60px;
+  width: 50px;
   flex-shrink: 0;
   background-color: #000000;
   color: white;
@@ -87,7 +95,27 @@ header {
   border-radius: 50%;
   display: inline-block;
   background-image: url(../img/profile.svg);
-  
+
+
+}
+
+/* HEADER */
+header {
+  height: 80px;
+  background-color: #090B12;
+  display: flex;
+  justify-content: right;
+  padding: 5px;
+}
+
+
+.btn-header {
+  border: 1px solid #fff;
+  color: #fff;
+  border-radius: 20px;
+  padding: 10px;
+  font-size: 0.7rem;
+  font-weight: 500;
 }
 
 /* MAIN */
@@ -99,8 +127,24 @@ header {
 
 .content {
   overflow-y: auto;
-  width: calc(100% - 60px);
+  width: calc(100% - 50px);
   background-color: #141922;
+}
+
+/* NAV-MAIN */
+main {
+  padding: 10px;
+}
+
+.nav-main {
+  display: flex;
+  list-style: none;
+  font-size: 0.6rem;
+  font-weight: 600;
+  flex-wrap: wrap;
+  gap: 10px;
+  color: #75767B;
+  justify-content: center;
 }
 
 /* FOOTER */
