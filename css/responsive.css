@@ -3,5 +3,97 @@
     :root {
         --wd-sidebar: 200px;
     }
-    
+
+    .logo-small {
+        display: none;
+    }
+
+    .logo-large {
+        display: inline-block;
+    }
+
+    .name-menu-sidebar,
+    .name-playlist,
+    .new-playlist,
+    .title-playlist,
+    .btn-app,
+    .account-name,
+    .divider {
+        display: inline;
+    }
+
+    .nav-sidebar,
+    .account-sidebar,
+    .account-bar {
+        text-align: left;
+    }
+
+    .btn-download,
+    .search,
+    .home {
+        margin-bottom: 0;
+    }
+
+    .sidebar {
+        font-size: 0.7rem;
+        color: #616161;
+    }
+
+    .menu-top {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .menu-top li {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+        align-items: center;
+    }
+
+    .title-playlist {
+        margin: 20px 20px;
+        color: #fff;
+    }
+
+    .list-playlist {
+        gap: 20px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .list-playlist li {
+        width: 100%;
+    }
+
+    .new-playlist {
+        color: inherit;
+    }
+
+    .btn-new-playlist {
+        display: inline-block;
+        font-size: 2rem;
+    }
+
+    .nav-main {
+        font-size: 0.9rem;
+        gap: 20px;
+
+    }
+}
+
+
+@media screen and (min-width: 700px) {
+    .col {
+        width: calc(100% / 4 - 30px / 4);
+    }
+
+}
+
+@media screen and (min-width: 1100px) {
+    .col {
+        width: calc(100% / 6 - 50px / 6);
+    }
 }

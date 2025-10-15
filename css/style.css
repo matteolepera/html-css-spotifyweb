@@ -1,7 +1,5 @@
 :root {
   --wd-sidebar: 50px;
-  --numb-col: 2;
-  --gap-col: 10px;
 }
 
 /* RESET */
@@ -67,7 +65,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 6px;
+  padding: 10px;
 }
 
 .sidebar ul {
@@ -80,7 +78,8 @@ body {
 .title-playlist,
 .btn-app,
 .account-name,
-.divider {
+.divider,
+.logo-large {
   display: none;
 }
 
@@ -161,11 +160,11 @@ main {
 .box-section {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--gap-col);
+  gap: 10px;
 }
 
 .col {
-  width: calc(100% / var(--numb-col) - var(--gap-col) / var(--numb-col));
+  width: calc(100% / 2 - 10px / 2);
   text-align: center;
   color: white;
 }

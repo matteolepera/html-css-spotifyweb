@@ -27,11 +27,14 @@
             <!-- Sidebar -->
             <div class="sidebar">
                 <nav class="nav-sidebar">
-                    <ul class="menu-home">
-                        <li><img class="ht-25 mb-10" src="./img/logo-small.svg" alt=""></li>
-                        <li><img class="ht-20 mb-10" src="./img/home.svg" alt=""><span
+                    <ul>
+                        <li><img class="logo-small ht-25 mb-10" src="./img/logo-small.svg" alt="">
+                        <img class="logo-large ht-30 mb-10" src="./img/logo.svg" alt=""></li>
+                    </ul>
+                    <ul class="menu-top">
+                        <li><img class="home ht-20 mb-10" src="./img/home.svg" alt=""><span
                                 class="name-menu-sidebar">Home</span></li>
-                        <li><img class="ht-20 mb-10" src="./img/search.svg" alt=""><span
+                        <li><img class="search ht-20 mb-10" src="./img/search.svg" alt=""><span
                                 class="name-menu-sidebar">Cerca</span></li>
                         <li><img class="ht-20" src="./img/libreria.svg" alt=""><span class="name-menu-sidebar">La Tua
                                 Libreria</span>
@@ -40,8 +43,8 @@
                     <span class="title-playlist">
                         <h3>PLAYLIST</h3>
                     </span>
-                    <ul>
-                        <li><span class="new-playlist"><i class="fa-solid fa-square-plus"></i>Crea Playlist</span></li>
+                    <ul class="list-playlist">
+                        <li><span class="new-playlist"><a href=""><i class="btn-new-playlist fa-solid fa-square-plus"></i>Crea Playlist</span></a></li>
                         <li><span class="name-playlist">Nuova Playlist</span></li>
                         <li><span class="name-playlist">Nuova Playlist</span></li>
                         <li><span class="name-playlist">Nuova Playlist</span></li>
@@ -51,9 +54,12 @@
                     </ul>
                 </nav>
                 <div class="account-sidebar">
-                    <a href=""><img class="ht-20 mb-10" src="./img/download.svg" alt=""><span class="btn-app">installa
+                    <div>
+                    <a class="btn-download mb-10"><img class="ht-20" src="./img/download.svg" alt=""><span class="btn-app">installa
                             l'app</span></a>
-                    <hr class="divider">
+                            </div>
+                            
+                    
                     <div class="account-bar">
                         <div class="profile-picture"></div> <span class="account-name">John Doe</span>
                     </div>
