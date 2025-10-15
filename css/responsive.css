@@ -1,0 +1,7 @@
+/* MOBILE-S */
+@media screen and (min-width: 600px) {
+    :root {
+        --wd-sidebar: 200px;
+    }
+    
+}

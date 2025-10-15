@@ -1,4 +1,8 @@
-:root {}
+:root {
+  --wd-sidebar: 50px;
+  --numb-col: 2;
+  --gap-col: 10px;
+}
 
 /* RESET */
 * {
@@ -42,6 +46,11 @@ body {
   margin-bottom: 10px
 }
 
+.mb-20 {
+  margin-bottom: 20px
+}
+
+/* TIPOGRAPHY */
 
 /* WRAPPER */
 .wrapper {
@@ -51,7 +60,7 @@ body {
 
 /* SIDEBAR */
 .sidebar {
-  width: 50px;
+  width: var(--wd-sidebar);
   flex-shrink: 0;
   background-color: #000000;
   color: white;
@@ -127,7 +136,7 @@ header {
 
 .content {
   overflow-y: auto;
-  width: calc(100% - 50px);
+  width: calc(100% - var(--wd-sidebar));
   background-color: #141922;
 }
 
@@ -145,6 +154,38 @@ main {
   gap: 10px;
   color: #75767B;
   justify-content: center;
+}
+
+/* SECTION */
+
+.box-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap-col);
+}
+
+.col {
+  width: calc(100% / var(--numb-col) - var(--gap-col) / var(--numb-col));
+  text-align: center;
+  color: white;
+}
+
+.title-section {
+  color: white;
+  font-size: 0.8rem;
+}
+
+.subtitle-col {
+  color: #76797D;
+}
+
+.col h4 {
+  font-size: 0.8rem;
+  margin-top: 10px;
+}
+
+.img-circle {
+  border-radius: 50%;
 }
 
 /* FOOTER */
