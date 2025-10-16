@@ -15,6 +15,7 @@ img {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 body {
@@ -23,6 +24,9 @@ body {
 }
 
 /* UTILITY */
+.flex {
+  display: flex;
+}
 
 .ht-20 {
   height: 20px;
@@ -79,7 +83,8 @@ body {
 .btn-app,
 .account-name,
 .divider,
-.logo-large {
+.logo-large,
+.divider {
   display: none;
 }
 
@@ -96,13 +101,12 @@ body {
 }
 
 
-.profile-picture {
+.profile-picture img {
   background-color: grey;
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  display: inline-block;
-  background-image: url(../img/profile.svg);
+  
 
 
 }
@@ -191,4 +195,26 @@ main {
 footer {
   height: 80px;
   background-color: #282828;
+}
+
+.action-foot {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.play {
+  width: 40%;
+
+  /* debug */
+  background-color: white;
+  min-height: 80px;
+}
+
+.artist,
+.sound {
+  width: 30%;
+
+  /* debug */
+  background-color: red;
+  min-height: 80px;
 }

@@ -17,9 +17,12 @@
     .new-playlist,
     .title-playlist,
     .btn-app,
-    .account-name,
-    .divider {
+    .account-name {
         display: inline;
+    }
+    .divider {
+        display: block;
+        margin: 10px 0 10px 0;
     }
 
     .nav-sidebar,
@@ -39,18 +42,9 @@
         color: #616161;
     }
 
-    .menu-top {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-    }
-
     .menu-top li {
         width: 100%;
         display: flex;
-        flex-wrap: wrap;
-        gap: 5px;
-        align-items: center;
     }
 
     .title-playlist {
@@ -70,11 +64,26 @@
 
     .new-playlist {
         color: inherit;
+        display: flex;
     }
 
     .btn-new-playlist {
         display: inline-block;
         font-size: 2rem;
+    }
+
+    .btn-download ,
+    .account-bar {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .account-name {
+        font-weight: 800;
+        color: white
     }
 
     .nav-main {
