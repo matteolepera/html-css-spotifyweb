@@ -17,7 +17,8 @@
     .new-playlist,
     .title-playlist,
     .btn-app,
-    .account-name {
+    .account-name,
+    .title-new-playlist {
         display: inline;
     }
 
