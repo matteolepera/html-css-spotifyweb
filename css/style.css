@@ -134,7 +134,7 @@ header {
 
 .main-container {
   display: flex;
-  height: calc(100% - 80px);
+  height: calc(100% - 60px);
 }
 
 .content {
@@ -193,28 +193,46 @@ main {
 
 /* FOOTER */
 footer {
-  height: 80px;
+  height: 60px;
   background-color: #282828;
 }
 
 .action-foot {
   width: 100%;
-  margin: 0 auto;
+  justify-content: space-between;
+  padding: 10px;
+
 }
 
 .play {
   width: 40%;
-
-  /* debug */
-  background-color: white;
-  min-height: 80px;
 }
 
 .artist,
 .sound {
   width: 30%;
+  gap: 10px;
+}
 
-  /* debug */
-  background-color: red;
-  min-height: 80px;
+.artist {
+  align-items: center;
+  font-size: 0.8rem;
+}
+
+.song {
+  color: white;
+  font-size: 0.7rem;
+}
+
+.song h6 {
+  color: #828282;
+}
+
+.action-btn {
+  color: #828282;
+}
+
+.img-play {
+  width: 30px;
+  height: 20px;
 }
