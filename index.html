@@ -30,21 +30,25 @@
                     <div>
                         <img class="logo-small ht-25 mb-10" src="./img/logo-small.svg" alt="">
                         <img class="logo-large ht-30 mb-10" src="./img/logo.svg" alt="">
-                        </div>
+                    </div>
                     <ul class="menu-top">
                         <li><a href=""><img class="home ht-20 mb-10" src="./img/home.svg" alt=""><span
-                                class="name-menu-sidebar">Home</span></a></li>
+                                    class="name-menu-sidebar">Home</span></a></li>
                         <li><a href=""><img class="search ht-20 mb-10" src="./img/search.svg" alt=""><span
-                                class="name-menu-sidebar">Cerca</span></a></li>
-                        <li><a href=""><img class="ht-20" src="./img/libreria.svg" alt=""><span class="name-menu-sidebar">La Tua
-                                Libreria</span></a>
+                                    class="name-menu-sidebar">Cerca</span></a></li>
+                        <li><a href=""><img class="library ht-20" src="./img/libreria.svg" alt=""><span
+                                    class="name-menu-sidebar">La Tua
+                                    Libreria</span></a>
                         </li>
                     </ul>
                     <span class="title-playlist">
                         <h3>PLAYLIST</h3>
                     </span>
                     <ul class="list-playlist">
-                        <li><span class="new-playlist"><a href=""><i class="btn-new-playlist fa-solid fa-square-plus"></i>Crea Playlist</a></span></li>
+                        <li><span class="new-playlist"><a href=""><i
+                                        class="btn-new-playlist fa-solid fa-square-plus"></i></span><span>Crea
+                                Playlist</span></a>
+                        </li>
                         <li><span class="name-playlist">Nuova Playlist</span></li>
                         <li><span class="name-playlist">Nuova Playlist</span></li>
                         <li><span class="name-playlist">Nuova Playlist</span></li>
@@ -55,10 +59,11 @@
                 </nav>
                 <div class="account-sidebar">
                     <div class="install">
-                    <a class="btn-download mb-10"><img class="ht-20" src="./img/download.svg" alt=""><span class="btn-app">installa
-                            l'app</span></a>
-                            </div>
-                            
+                        <a class="btn-download mb-10"><img class="ht-20" src="./img/download.svg" alt=""><span
+                                class="btn-app">installa
+                                l'app</span></a>
+                    </div>
+
                     <hr class="divider">
                     <div class="account-bar">
                         <div class="profile-picture">
@@ -94,7 +99,7 @@
                     <!-- End-Nav-Main -->
 
                     <!-- Section-Recent -->
-                     <section>
+                    <section>
                         <h2 class="title-section mt-20 mb-10">Recently Played</h2>
                         <div class="box-section">
                             <div class="col">
@@ -129,13 +134,14 @@
                             </div>
                         </div>
 
-                     </section>
-                     <!-- End-Section-Recent -->
+                    </section>
+                    <!-- End-Section-Recent -->
 
-                     <!-- Section-Created4u -->
-                     <section>
+                    <!-- Section-Created4u -->
+                    <section>
                         <h2 class="title-section mt-20 mb-10">Creato per Jhon Doe</h2>
-                        <h6 class="subtitle-col mb-10">Pi&ugrave; ascolti, pi&ugrave; accurati saranno i suggerimenti.</h6>
+                        <h6 class="subtitle-col mb-10">Pi&ugrave; ascolti, pi&ugrave; accurati saranno i suggerimenti.
+                        </h6>
                         <div class="box-section">
                             <div class="col">
                                 <img src="./img/radar.jpeg" alt="">
@@ -147,13 +153,14 @@
                             </div>
                         </div>
 
-                     </section>
-                     <!-- End-Section-Created4u -->
+                    </section>
+                    <!-- End-Section-Created4u -->
 
-                     <!-- Section-Popolar-Artist -->
-                     <section>
+                    <!-- Section-Popolar-Artist -->
+                    <section>
                         <h2 class="title-section mt-20 mb-10">Artisti pi&ugrave; popolari</h2>
-                        <h6 class="subtitle-col mb-10">Pi&ugrave; ascolti, pi&ugrave; accurati saranno i suggerimenti.</h6>
+                        <h6 class="subtitle-col mb-10">Pi&ugrave; ascolti, pi&ugrave; accurati saranno i suggerimenti.
+                        </h6>
                         <div class="box-section">
                             <div class="col">
                                 <img class="img-circle" src="./img/youg.jpeg" alt="">
@@ -165,8 +172,8 @@
                             </div>
                         </div>
 
-                     </section>
-                     <!-- End-Section-Popolar-Artist -->
+                    </section>
+                    <!-- End-Section-Popolar-Artist -->
 
                 </main>
                 <!-- End-Main -->
@@ -177,24 +184,54 @@
         <!-- Footer -->
         <footer class="">
             <div class="flex action-foot">
-            <div class="artist flex">
-                <img class="img-play" src="./img/sinister.jpeg" alt="">
+                <!-- Artist -->
+                <div class="artist flex">
+                    <img class="img-play" src="./img/sinister.jpeg" alt="">
 
-                <div class="song">
-                <h5>Sinister</h5>
-                <h6>Brano</h6>
-                <h6>Nome</h6>
+                    <div class="song">
+                        <h5>Sinister</h5>
+                        <h6>Brano</h6>
+                        <h6>Nome</h6>
+                    </div>
+
+                    <div class="action-btn">
+                        <a href=""><i class="fa-regular fa-heart"></i></a>
+                        <a href=""><i class="fa-regular fa-folder"></i></a>
+                    </div>
                 </div>
+                <!-- End-Artist -->
 
-                <div class="action-btn">
-                    <a href=""><i class="fa-regular fa-heart"></i></a>
-                    <a href=""><i class="fa-regular fa-folder"></i></a>
+                <!-- Play -->
+                <div class="play flex">
+                    <div class="btn-player">
+                        <a href=""><i class="fa-solid fa-shuffle"></i></a>
+                        <a href=""><i class="fa-solid fa-backward-step"></i></a>
+                        <a href=""><span class="play-cirlce"><i class="fa-solid fa-play"></i></span></a>
+                        <a href=""><i class="fa-solid fa-forward-step"></i></a>
+                        <a href=""><i class="fa-solid fa-arrow-rotate-right"></i></a>
+                    </div>
+
+                    <div class="bar-player flex">
+                        <h6>0:25</h6>
+                        <div class="bar">
+                            <div class="slider"></div>
+                        </div>
+                        <h6>4:35</h6>
+                    </div>
+
                 </div>
+                <!-- End-Play -->
 
-
-            </div>
-            <div class="play"></div>
-            <div class="sound"></div>
+                <!-- Sound -->
+                <div class="sound flex">
+                    <a href=""><i class="fa-solid fa-list-ul"></i></a>
+                    <a href=""><i class="fa-solid fa-desktop"></i></a>
+                    <a href=""><i class="fa-solid fa-volume-high"></i></a>
+                    <div class="bar">
+                        <div class="slider"></div>
+                    </div>
+                </div>
+                <!-- End-Sound -->
             </div>
         </footer>
         <!-- End-Footer -->

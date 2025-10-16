@@ -106,7 +106,7 @@ body {
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  
+
 
 
 }
@@ -199,29 +199,31 @@ footer {
 
 .action-foot {
   width: 100%;
-  justify-content: space-between;
-  padding: 10px;
+  padding: 15px 5px 0;
+}
 
+.artist,
+.sound {
+  width: 30%;
+  gap: 5px;
 }
 
 .play {
   width: 40%;
 }
 
-.artist,
-.sound {
-  width: 30%;
-  gap: 10px;
-}
+
+
+/* ARTIST */
 
 .artist {
   align-items: center;
-  font-size: 0.8rem;
+  font-size: 0.6rem;
 }
 
 .song {
   color: white;
-  font-size: 0.7rem;
+  font-size: 0.6rem;
 }
 
 .song h6 {
@@ -235,4 +237,68 @@ footer {
 .img-play {
   width: 30px;
   height: 20px;
+}
+
+.sound,
+.play a {
+  color: #fff;
+  font-size: 0.5rem;
+}
+
+/* PLAY */
+.play a {
+  font-size: 0.8rem;
+}
+
+.play {
+  width: 80%;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.play-cirle {
+  background-color: white;
+  height: 22px;
+  width: 22px;
+  border: 50%;
+  display: inline-block;
+
+}
+
+.bar-player {
+  width: 80%;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.bar-player h6 {
+  color: #fff;
+}
+
+.btn-player {
+  display: flex;
+  gap: 15px;
+}
+
+
+/* SOUND */
+
+.sound {
+  align-items: center;
+}
+
+.bar {
+  width: 50%;
+  height: 5px;
+  border-radius: 10px;
+  background-color: #5A5A5A;
+}
+
+.slider {
+  width: 20%;
+  height: 5px;
+  border-radius: 10px;
+  background-color: #fff;
 }
