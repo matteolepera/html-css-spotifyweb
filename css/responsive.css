@@ -51,6 +51,11 @@
 
     .name-menu-sidebar {
         vertical-align: middle;
+        margin-left: 5px;
+    }
+
+    .menu-top li {
+        margin-bottom: 10px;
     }
 
     .title-playlist {
@@ -97,9 +102,28 @@
         gap: 20px;
 
     }
+
+    .sound,
+    .artist {
+        font-size: 0.8rem;
+    }
+
+    .song {
+    font-size: 0.9rem;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 5px;
+}
+
 }
 
 
+@media screen and (min-width: 645px) {
+    .song h5 {
+        width: 100%;
+    }
+
+}
 
 @media screen and (min-width: 700px) {
     .col {
