@@ -97,7 +97,7 @@ body {
   overflow: hidden;
 }
 
-/* ─── SIDEBAR ─── */
+/* SIDEBAR */
 .sidebar {
   width: var(--wd-sidebar);
   flex-shrink: 0;
@@ -200,7 +200,7 @@ body {
   color: var(--text-primary);
 }
 
-/* ─── CONTENT ─── */
+/* CONTENT */
 .content {
   flex: 1;
   overflow-y: auto;
@@ -222,7 +222,7 @@ body {
   border-radius: 3px;
 }
 
-/* ─── HEADER ─── */
+/* HEADER */
 header {
   height: var(--header-height);
   display: flex;
@@ -358,27 +358,28 @@ main {
 
 /* ─── FOOTER ─── */
 footer {
-  height: var(--footer-height);
+  height: auto;
+  min-height: 70px;
   background-color: var(--bg-footer);
   border-top: 1px solid var(--border-footer);
   flex-shrink: 0;
 }
 
 .action-foot {
-  height: 100%;
   width: 100%;
+  height: 100%;
+  padding: 10px 12px;
   align-items: center;
-  padding: 0 16px;
+  flex-wrap: nowrap;
   gap: 8px;
 }
 
-/* ARTIST INFO */
+/* ARTIST */
 .artist {
-  width: 30%;
+  flex: 0 0 45%;
   min-width: 0;
   align-items: center;
-  gap: 12px;
-  flex-shrink: 0;
+  gap: 8px;
 }
 
 .img-play {
@@ -430,13 +431,15 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 6px;
+  gap: 4px;
+  min-width: 0;
 }
 
 .btn-player {
   display: flex;
   align-items: center;
   gap: 16px;
+  justify-content: center;
 }
 
 .btn-player a {
@@ -477,9 +480,8 @@ footer {
 
 .bar-player {
   width: 100%;
-  max-width: 500px;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
 }
 
 .bar-player h6 {
@@ -541,12 +543,7 @@ footer {
 
 /* SOUND */
 .sound {
-  width: 30%;
-  min-width: 0;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 10px;
-  flex-shrink: 0;
+  display: none;
 }
 
 .sound a {

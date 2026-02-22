@@ -32,7 +32,6 @@
     .name-menu-sidebar {
         display: inline;
         vertical-align: middle;
-        margin-left: 0;
     }
 
     /* Playlist */
@@ -106,6 +105,7 @@
         background: rgba(255, 255, 255, 0.07);
     }
 
+    /* Install / account */
     .divider {
         display: block;
         border: none;
@@ -162,6 +162,22 @@
         flex-direction: column;
         gap: 2px;
     }
+
+    .sound {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 10px;
+        flex: 0 0 25%;
+    }
+
+    .artist {
+        flex: 0 0 35%;
+    }
+
+    .play {
+        flex: 1;
+    }
 }
 
 @media screen and (min-width: 645px) {
@@ -177,39 +193,22 @@
 }
 
 @media screen and (min-width: 858px) {
-
-    .action-foot {
-        align-items: center;
-    }
-
-    footer {
-        height: auto;
-        padding: 0;
-    }
-
-    .action-foot {
-        padding: 10px 16px;
-        gap: 0;
+    .artist {
+        flex: 0 0 30%;
     }
 
     .play {
-        flex-direction: column;
-        align-items: center;
-        gap: 6px;
-    }
-
-    .artist,
-    .sound {
-        width: 30%;
-    }
-
-    .play {
-        width: 40%;
+        flex: 0 0 40%;
     }
 
     .sound {
-        justify-content: flex-end;
+        flex: 0 0 30%;
     }
+
+    .action-foot {
+        padding: 12px 16px;
+    }
+
 }
 
 @media screen and (min-width: 1100px) {
