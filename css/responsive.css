@@ -1,30 +1,17 @@
-/* MOBILE-S */
 @media screen and (min-width: 600px) {
+
     :root {
-        --wd-sidebar: 200px;
+        --wd-sidebar: 220px;
     }
 
+    /* Sidebar */
     .logo-small {
         display: none;
     }
 
     .logo-large {
-        display: inline-block;
-    }
-
-    .name-menu-sidebar,
-    .name-playlist,
-    .new-playlist,
-    .title-playlist,
-    .btn-app,
-    .account-name,
-    .title-new-playlist {
-        display: inline;
-    }
-
-    .divider {
         display: block;
-        margin: 10px 0 10px 0;
+        margin-bottom: 28px;
     }
 
     .nav-sidebar,
@@ -33,41 +20,36 @@
         text-align: left;
     }
 
-    .btn-download,
-    .search,
-    .home {
-        margin-bottom: 0;
-    }
-
     .sidebar {
-        font-size: 0.7rem;
-        color: #616161;
+        padding: 24px 16px 16px;
     }
 
-    .home,
-    .search,
-    .library {
-        vertical-align: middle;
+    /* Menu voci */
+    .menu-top li a {
+        justify-content: flex-start;
     }
 
     .name-menu-sidebar {
+        display: inline;
         vertical-align: middle;
-        margin-left: 5px;
+        margin-left: 0;
     }
 
-    .menu-top li {
-        margin-bottom: 10px;
-    }
-
+    /* Playlist */
     .title-playlist {
-        margin: 20px 20px;
-        color: #fff;
+        display: block;
+        color: var(--text-secondary);
+        font-size: 0.65rem;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        margin: 20px 0 10px;
+        padding: 0 4px;
     }
 
     .list-playlist {
-        gap: 20px;
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 4px;
     }
 
     .list-playlist li {
@@ -75,74 +57,175 @@
     }
 
     .new-playlist {
-        color: inherit;
+        display: inline;
         vertical-align: middle;
+        color: var(--text-secondary);
+        margin-right: 8px;
     }
 
     .btn-new-playlist {
         display: inline-block;
-        font-size: 2rem;
+        font-size: 1.4rem;
+        vertical-align: middle;
+        transition: color 0.15s;
     }
 
-    .btn-download,
+    .btn-new-playlist:hover {
+        color: var(--text-primary);
+    }
+
+    .title-new-playlist {
+        display: inline;
+        vertical-align: middle;
+        font-size: 0.8rem;
+        font-weight: 600;
+        color: var(--text-secondary);
+        transition: color 0.15s;
+    }
+
+    .list-playlist li:first-child:hover .title-new-playlist,
+    .list-playlist li:first-child:hover .new-playlist {
+        color: var(--text-primary);
+    }
+
+    .name-playlist {
+        display: block;
+        font-size: 0.8rem;
+        color: var(--text-secondary);
+        padding: 4px;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: color 0.15s, background 0.15s;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .name-playlist:hover {
+        color: var(--text-primary);
+        background: rgba(255, 255, 255, 0.07);
+    }
+
+    .divider {
+        display: block;
+        border: none;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        margin: 12px 0;
+    }
+
+    .btn-download {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        width: 100%;
+        margin-bottom: 12px;
+    }
+
+    .btn-app {
+        display: inline;
+        font-size: 0.75rem;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+    }
+
     .account-bar {
         display: flex;
-        flex-wrap: wrap;
-        width: 100%;
         align-items: center;
-        gap: 5px;
+        gap: 10px;
     }
 
     .account-name {
-        font-weight: 800;
-        color: white
-    }
-
-    .nav-main {
-        font-size: 0.9rem;
-        gap: 20px;
-
-    }
-
-    .sound,
-    .artist {
+        display: inline;
         font-size: 0.8rem;
+        font-weight: 700;
+        color: var(--text-primary);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
+    /* Nav principale */
+    .nav-main {
+        font-size: 0.75rem;
+        gap: 2px;
+        justify-content: flex-start;
+    }
+
+    /* Card */
+    .col {
+        width: calc(50% - 8px);
+    }
+
+    /* Footer song info */
     .song {
-    font-size: 0.9rem;
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 5px;
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+    }
 }
-
-}
-
 
 @media screen and (min-width: 645px) {
     .song h5 {
         width: 100%;
     }
-
 }
 
 @media screen and (min-width: 700px) {
     .col {
-        width: calc(100% / 4 - 30px / 4);
+        width: calc(25% - 12px);
     }
-
 }
 
 @media screen and (min-width: 858px) {
-    .play {
-        flex-direction: column;
+
+    .action-foot {
         align-items: center;
     }
 
+    footer {
+        height: auto;
+        padding: 0;
+    }
+
+    .action-foot {
+        padding: 10px 16px;
+        gap: 0;
+    }
+
+    .play {
+        flex-direction: column;
+        align-items: center;
+        gap: 6px;
+    }
+
+    .artist,
+    .sound {
+        width: 30%;
+    }
+
+    .play {
+        width: 40%;
+    }
+
+    .sound {
+        justify-content: flex-end;
+    }
 }
 
 @media screen and (min-width: 1100px) {
     .col {
-        width: calc(100% / 6 - 50px / 6);
+        width: calc(16.666% - 14px);
+    }
+
+    .nav-main {
+        font-size: 0.8rem;
+    }
+
+    .btn-player {
+        gap: 20px;
+    }
+
+    .bar-player {
+        max-width: 600px;
     }
 }
